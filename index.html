@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1><b>Responsive Resume Builder</b></h1>
+    <div class="container">
+        <div class="form-container">
+            <form id="resume-form">
+                <h2>Personal Information</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+                
+                <label for="profile">Profile Summary:</label>
+                <textarea id="profile" name="profile" placeholder="Enter a short profile summary"></textarea>
+                
+                <h2>Education</h2>
+                <div id="education-container">
+                    <button type="button" id="add-education">Add Education</button>
+                </div>
+                
+                <h2>Skills</h2>
+                <div id="skills-container">
+                    <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+                    <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+                    <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+                    <label><input type="checkbox" name="skills" value="Python"> Python</label>
+                    <label><input type="checkbox" name="skills" value="Data Structure"> Data Structure</label>
+                </div>
+                
+                <h2>Experience</h2>
+                <div id="experience-container">
+                    <button type="button" id="add-experience">Add Experience</button>
+                </div>
+                
+                <button type="button" id="reset-form">Clear Form</button>
+            </form>
+        </div>
+
+        <div class="resume-preview">
+            <h2>Resume Preview</h2>
+            <div id="resume" class="animated">
+                <h1 id="resume-name"></h1>
+                <p id="resume-email"></p>
+                <p id="resume-phone"></p>
+                <h3>Profile Summary</h3>
+                <p id="resume-profile"></p>
+                <h3>Education</h3>
+                <ul id="resume-education"></ul>
+                <h3>Skills</h3>
+                <ul id="resume-skills"></ul>
+                <h3>Experience</h3>
+                <ul id="resume-experience"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
